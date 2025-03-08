@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(117, 216, 219);}
+
+table{
+    border-collapse: collapse;
+    color:azure;
+}
+
+thead tr{
+    width: 100%;
+    padding: 10px;
+    background-color: #2C3844 ;
+    border: #202832 1px solid;
+}
+tbody tr{
+    background: #4b5864 ;
+}
+
+tbody td{
+    padding: 10px;
+    border: #202832 1px solid;
+}
+tbody tr:nth-child(even){
+    background: #3a4753 ;
+}
+thead th{
+    padding: 15px;
+    border: #202832 1px solid;
+}
+
+a{
+    text-decoration: none;}
+
+.head-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3rem;
+    background-color: #2C3844;
+    color: white;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-form{
+    width: 100%;
+    padding: 10px;
+    background-color: #6f859c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.btn-form a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    color: black;
+}
+.btn-form:hover{
+    background-color: #2C3844;
+    color: white;
+}
+
+#search{
+    padding: 10px;
+    width: 50%;
+}
+
+tbody tr button{
+    /* position: absolute; */
+    /* left: 1; */
+    color: white;
+    background: rgb(7, 148, 141);
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+tbody tr button:hover{
+    background: rgb(14, 90, 86);
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #2C3844;
+    color: white;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+.form input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form button{
+    padding: 10px;
+    background-color: #57a7a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.form button a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.form button:hover{
+    background-color: #2a5855}
