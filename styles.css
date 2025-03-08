@@ -117,6 +117,12 @@ tbody tr button:hover{
     cursor: pointer;
     margin-top: 1rem;
 }
+.form .back{
+    background-color: #8a3b3b;
+}
+.form .back:hover{
+    background-color: #5a1b1b;
+}
 .form button a{
     color: white;
     width: 100%;

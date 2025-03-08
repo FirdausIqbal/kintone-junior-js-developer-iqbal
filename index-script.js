@@ -47,17 +47,20 @@
     tableData.addEventListener("click", async (e) => {
       e.preventDefault();
       if(e.target.id === "btndelete") {
-        try {
-          const id = e.target.value;
-          const response = await fetch(`${API_URL}/${id}`, {
-            method: 'DELETE'
-          });
-          const data = await response.json();
-          alert(`Data ${data.name} berhasil dihapus`);
-        } catch (error) {
-          console.log(error.message);
-          alert(error.message);
-        }
+        const result = window.confirm("Pakah anda yakin ingin menghapus data ?");
+        if(result) {
+          try {
+            const id = e.target.value;
+            const response = await fetch(`${API_URL}/${id}`, {
+              method: 'DELETE'
+            });
+            const data = await response.json();
+            alert(`Data ${data.name} berhasil dihapus`);
+          } catch (error) {
+            console.log(error.message);
+            alert(error.message);
+          }
+        } 
       }
     })
 
